@@ -1,0 +1,8 @@
+{
+  "id_column": "record_id",
+  "prediction_label_column": "prediction",
+  "explanation_label_column": "prediction",
+  "feature_names_column": "feature_names",
+  "attributions_column": "attributions",
+  "require_matching_prediction_label": true
+}

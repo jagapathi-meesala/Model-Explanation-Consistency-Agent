@@ -1,0 +1,10 @@
+name: validate-explanation-records
+description: Validate prediction and explanation CSV files for required columns and structural consistency.
+input_schema:
+  type: object
+  additionalProperties: false
+  properties:
+    predictions_path: {type: string}
+    explanations_path: {type: string}
+    config_path: {type: string}
+  required: [predictions_path, explanations_path]

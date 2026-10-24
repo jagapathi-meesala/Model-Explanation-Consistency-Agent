@@ -1,0 +1,9 @@
+name: audit-attribution-consistency
+description: Check attribution values and feature-name lists in a local explanation CSV.
+input_schema:
+  type: object
+  additionalProperties: false
+  properties:
+    explanations_path: {type: string}
+    config_path: {type: string}
+  required: [explanations_path]

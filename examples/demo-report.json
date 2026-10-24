@@ -1,0 +1,59 @@
+{
+  "status": "warning",
+  "files_inspected": [
+    "examples/predictions.csv",
+    "examples/explanations.csv",
+    "examples/config.json"
+  ],
+  "checks_executed": [
+    "required_columns",
+    "duplicate_ids",
+    "counterpart_records",
+    "prediction_label_agreement",
+    "feature_attribution_consistency"
+  ],
+  "severity_counts": {
+    "error": 0,
+    "warning": 3,
+    "info": 1
+  },
+  "findings": [
+    {
+      "rule_id": "MEC005",
+      "severity": "warning",
+      "message": "Prediction records have no matching explanation record",
+      "record_ids": [
+        "r3"
+      ]
+    },
+    {
+      "rule_id": "MEC006",
+      "severity": "warning",
+      "message": "Explanation records have no matching prediction record",
+      "record_ids": [
+        "r4"
+      ]
+    },
+    {
+      "rule_id": "MEC007",
+      "severity": "warning",
+      "message": "Prediction labels differ between prediction and explanation records",
+      "record_ids": [
+        "r2"
+      ]
+    },
+    {
+      "rule_id": "MEC000",
+      "severity": "info",
+      "message": "Prediction and explanation files inspected",
+      "prediction_file": "predictions.csv",
+      "explanation_file": "explanations.csv",
+      "prediction_rows": 3,
+      "explanation_rows": 3
+    }
+  ],
+  "limitations": [
+    "Checks cover supplied records only.",
+    "Structural consistency does not prove explanation faithfulness, causal validity, or model correctness."
+  ]
+}

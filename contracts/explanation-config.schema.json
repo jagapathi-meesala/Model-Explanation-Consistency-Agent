@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Explanation Consistency Configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id_column": {
+      "type": "string"
+    },
+    "prediction_label_column": {
+      "type": "string"
+    },
+    "explanation_label_column": {
+      "type": "string"
+    },
+    "feature_names_column": {
+      "type": "string"
+    },
+    "attributions_column": {
+      "type": "string"
+    },
+    "required_prediction_columns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_explanation_columns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "require_matching_prediction_label": {
+      "type": "boolean"
+    }
+  }
+}

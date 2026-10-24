@@ -1,0 +1,10 @@
+name: compare-prediction-explanations
+description: Compare prediction and explanation record IDs and labels across local CSV files.
+input_schema:
+  type: object
+  additionalProperties: false
+  properties:
+    predictions_path: {type: string}
+    explanations_path: {type: string}
+    config_path: {type: string}
+  required: [predictions_path, explanations_path]

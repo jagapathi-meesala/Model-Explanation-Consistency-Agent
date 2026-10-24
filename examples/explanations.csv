@@ -1,0 +1,4 @@
+record_id,prediction,feature_names,attributions
+r1,approved,income;tenure,0.7;-0.2
+r2,approved,debt;income,0.3;0.1
+r4,rejected,age,0.8

@@ -1,0 +1,23 @@
+spec_version: "0.1.0"
+name: model-explanation-consistency-agent
+version: 1.0.0
+description: Check consistency between model predictions, explanation records, feature attributions, and declared model metadata using local files.
+author: agent-builder
+license: MIT
+skills:
+  - explanation-record-validation
+  - attribution-consistency-audit
+  - prediction-explanation-comparison
+tools:
+  - validate-explanation-records
+  - audit-attribution-consistency
+  - compare-prediction-explanations
+runtime:
+  max_turns: 12
+  temperature: 0.1
+  timeout: 60
+tags:
+  - explainable-ai
+  - model-monitoring
+  - machine-learning
+  - consistency
